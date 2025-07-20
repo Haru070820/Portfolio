@@ -1,0 +1,123 @@
+@charset "utf-8";
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+*{
+    font-family: 'DungGeunMo';
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Layout */
+body{
+    font-size: 18px;
+    background-color: #222;
+    color: #fff;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+section{
+    height: 100vh;
+    font-size: 24px;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Nav */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-menu li a:hover{
+    color: #17494A;
+}
+
+/* Hero Page */
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+#hero h1{
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+#hero > p {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: rgba(207, 207, 207, 0.8);
+    text-decoration: underline;
+    pointer-events: none;
+}
+section:not(#hero) > p{
+    position: static;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+/* About Me Page */
+#about h2{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+#about p{
+    display: block;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Skills Page */
+#skills{
+    padding: 2rem;
+    text-align: center;
+}
+#skills h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
