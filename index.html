@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Nav Menu -->
     <nav>
-        <div class="logo">LHC</div>
+        <div class="logo">Lee Himchan's portfolio</div>
         <ul class="nav-menu" id="nav-menu">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -17,58 +18,126 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Hero page -->
     <section id="hero">
         <h1>안녕하세요, 사용자 중심 웹을 제작하고 싶은 프론트엔드 개발자 이힘찬입니다.</h1>
         <p>더 알아보기 &downarrow;</p>
     </section>
-
+    
+    <!-- About me Page -->
     <section id="about">
         <h2>About Me</h2>
         <p>저는 사용자와 직관적으로 소통할 수 있는 환경을 만드는 데 관심이 많은 프론트엔드 개발자입니다.</p>
+        <div class="interview">
+            <h3>Interview</h3>
+            <div class="QnA">
+                <p class="question">Q. 프론트엔드 개발자가 된 계기는?</p>
+                <p class="answer">A. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste error pariatur necessitatibus nulla aliquid sint quos magnam est ullam quidem, et sapiente! Unde, voluptates totam. Iusto, laudantium corrupti? Quis?</p>
+            </div>
+            <div class="QnA">
+                <p class="question">Q. 개발하면서 가장 중요하게 생각하는 부분은?</p>
+                <p class="answer">A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum eius impedit voluptates sapiente obcaecati nemo nesciunt inventore quam nam, quas, error, dolorem maiores laborum tempore voluptatem eum distinctio quasi.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills Page -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skillsList">
-            <li class="skill">
-                <span class="skill-name">HTML5</span>
-                <img src="images/html-icon.jpg" alt="HTML 아이콘" class="skill-image">
-                <span class="skill-level">50%</span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">CSS3</span>
-                <img src="images/css-icon copy.jpg" alt="CSS3 아이콘" class="skill-image">
-                <span class="skill-level">50%</span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">JavaScript</span>
-                <img src="images/javascript-icon copy 2.jpg" alt="JavaScript 아이콘" class="skill-image">
-                <span class="skill-level">50%</span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">Figma</span>
-                <img src="images/figma-icon copy 3.jpg" alt="Figma 아이콘" class="skill-image">
-                <span class="skill-level">50%</span>
+        <h2>Skills & Tools</h2>
+
+        <!-- Frontend category -->
+        <div class="skills-category">
+            <h3>Frontend</h3>
+            <ul class="skillsList">
+                <li class="skill">
+                    <span class="skill-name">HTML5</span>
+                    <img src="images/HTML5.png" alt="HTML 아이콘" class="skill-image">
+                    <span class="skill-level">50 %</span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">CSS3</span>
+                    <img src="images/CSS3.png" alt="CSS3 아이콘" class="skill-image">
+                    <span class="skill-level">50 %</span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <img src="images/JavaScript.png" alt="JavaScript 아이콘" class="skill-image">
+                    <span class="skill-level">50 %</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tools category -->
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <ul class="skillsList">
+                <li class="skill">
+                    <span class="skill-name">Figma</span>
+                    <img src="images/Figma.png" alt="Figma 아이콘" class="skill-image">
+                    <span class="skill-level">50 %</span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Notion</span>
+                    <img src="images/Notion.png" alt="Notion 아이콘" class="skill-image">
+                    <span class="since">2023 - Now</span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Github</span>
+                    <img src="images/Github.png" alt="Github 아이콘" class="skill-image">
+                    <span class="since">2025 - Now</span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Discord</span>
+                    <img src="images/Discord.png" alt="Discord 아이콘" class="skill-image">
+                    <span class="since">2021 - Now</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Projects Page -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li class="project"
+                data-title="포트폴리오 사이트"
+                data-tech="HTML, CSS, JQuery"
+                data-desc="학습한 것들을 토대로 작성한 프론트엔드 개인 포트폴리오입니다."
+                data-github="https://github.com/Haru070820/Portfolio">
+                
+                <h3 class="project-title">포트폴리오 사이트 <span class="project-scale">Sub</span></h3>
+                <img src="images/projectThumbnail.png" alt="포트폴리오 사이트입니다" class="project-image">
+                <p class="short-desc">프론트엔드의 개인 역량을 보여주는 개인 포트폴리오입니다.</p>
+                <button class="readmore-btn">자세히 보기</button>
             </li>
         </ul>
     </section>
+    <div id="project-popup" class="popup hidden">
+        <div class="content">
+            <button class="close">X</button>
+            <h3 class="title"></h3>
+            <p class="tech"></p>
+            <p class="desc"></p>
+            <a href="#" target="_blank" class="github">Github 바로가기</a>
+        </div>
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- 제작 후 추가 예정 -->
-    </section>
-
+    <!-- Contact Page -->
     <section id="contact">
         <h2>Thanks</h2>
         <p>봐주셔서 감사합니다 &#58;&#41;</p>
         <p>Email &#124; himchan5879@naver.com</p>
-        <p>Github &#124; <a href="https://github.com/깃허브주소넣기">Github</a></p>
+        <p>Github &#124; <a href="https://github.com/Haru070820">Haru070820</a></p>
     </section>
 
     <footer>
         <p>&copy; 2025, leehimchan all rights reserved.</p>
     </footer>
 
-    <script src="script/sectionScroll.js"></script>
+    <!-- 페이지 스크롤 -->
+    <!-- <script src="script/sectionScroll.js"></script> -->
+     <script src="script/jquery-3.7.1.min.js"></script>
+     <script src="script/ProjectModal.js"></script>
+     <script src="script/NavBar.js"></script>
 </body>
 </html>
